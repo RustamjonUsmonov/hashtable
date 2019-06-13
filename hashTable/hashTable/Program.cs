@@ -1,49 +1,49 @@
-﻿//using System;
-//using System.Collections;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace hashTable
-//{
-//    class ThisTable
-//    {
-//        static Hashtable userInfoHash;
-//    }
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//           var userInfoHash = new Hashtable();
+namespace hashTable
+{
+    class ThisTable
+    {
+        static Hashtable userInfoHash;
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           var userInfoHash = new Hashtable();
 
-//            //Добавление
-//            for (int i = 0; i < 10; i++)
-//            {
-//                userInfoHash.Add(i,"user"+i);
-//            }
+            //Добавление
+            for (int i = 0; i < 10; i++)
+            {
+                userInfoHash.Add(i,"user"+i);
+            }
 
-//            //удаление
-//            if (userInfoHash.ContainsKey(0))
-//            {
-//                userInfoHash.Remove(0);
-//            }
+            //удаление
+            if (userInfoHash.ContainsKey(0))
+            {
+                userInfoHash.Remove(0);
+            }
 
-//            //замена
-//            if (userInfoHash.ContainsKey(1))
-//            {
-//                userInfoHash[1]="replaced";
-//            }
+            //замена
+            if (userInfoHash.ContainsKey(1))
+            {
+                userInfoHash[1]="replaced";
+            }
 
-//            //вывод
-//            foreach (DictionaryEntry entry in userInfoHash)
-//            {
-//                Console.WriteLine("Key:"+entry.Key+"/Value:"+entry.Value);
-//            }
-//            Console.ReadKey();
-//        }
-//    }
-//}
+            //вывод
+            foreach (DictionaryEntry entry in userInfoHash)
+            {
+                Console.WriteLine("Key:"+entry.Key+"/Value:"+entry.Value);
+            }
+            Console.ReadKey();
+        }
+    }
+}
 
 //******************************************очередь с приоритетом
 //using System;
